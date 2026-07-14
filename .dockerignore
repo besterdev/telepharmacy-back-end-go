@@ -8,3 +8,4 @@ telepharmacy-back-end
 README.md
 supabase
 *_test.go
+docker-compose.yaml

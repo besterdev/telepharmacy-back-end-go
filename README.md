@@ -29,6 +29,14 @@ go mod tidy
 go run .
 ```
 
+Run with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+The API is available at `http://localhost:3000`.
+
 ## Routes
 
 ```text

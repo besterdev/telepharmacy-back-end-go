@@ -1,23 +1,23 @@
-# syntax=docker/dockerfile:1
+# Start from the latest golang base image
+FROM golang:latest
 
-FROM --platform=$BUILDPLATFORM golang:1.25-alpine AS builder
+# Set the Current Working Directory inside the container
+WORKDIR /app
 
-ARG TARGETOS=linux
-ARG TARGETARCH=amd64
-
-WORKDIR /src
-
+# Copy go.mod and go.sum files first; they are less frequently changed than source code, so Docker can cache this layer
 COPY go.mod go.sum ./
+
+# Download all dependencies
 RUN go mod download
 
+# Copy the source from the current directory to the Working Directory inside the container
 COPY . .
-RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
-    go build -trimpath -ldflags="-s -w" -o /out/server .
 
-FROM gcr.io/distroless/static-debian12:nonroot
+# Build the Go app
+RUN go build -o main .
 
-WORKDIR /app
-COPY --from=builder /out/server /app/server
+# Expose port 8080 to the outside world
+EXPOSE 8080
 
-USER nonroot:nonroot
-ENTRYPOINT ["/app/server"]
+# Command to run the executable
+CMD ["./main"]
