@@ -1,0 +1,10 @@
+.env
+.git
+.gitignore
+.dockerignore
+bin
+telepharmacy-back-end
+*.log
+README.md
+supabase
+*_test.go

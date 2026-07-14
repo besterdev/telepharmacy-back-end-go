@@ -1,0 +1,164 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "customerName": "Somchai Prasert",
+      "serviceType": "video_call",
+      "symptom": "Persistent dry cough for 5 days",
+      "status": "new",
+      "createdAt": "2026-06-30T08:12:00.000Z"
+    },
+    {
+      "id": "2",
+      "customerName": "Anong Wattana",
+      "serviceType": "video_call",
+      "symptom": "Severe chest pain and shortness of breath",
+      "status": "in_progress",
+      "createdAt": "2026-06-30T08:45:00.000Z"
+    },
+    {
+      "id": "3",
+      "customerName": "James Carter",
+      "serviceType": "chat",
+      "symptom": "Refill request for blood pressure medication",
+      "status": "completed",
+      "createdAt": "2026-06-29T14:20:00.000Z"
+    },
+    {
+      "id": "4",
+      "customerName": "Ploy Siriwan",
+      "serviceType": "video_call",
+      "symptom": "Allergic skin rash after new medication",
+      "status": "new",
+      "createdAt": "2026-06-30T09:05:00.000Z"
+    },
+    {
+      "id": "5",
+      "customerName": "Michael Chen",
+      "serviceType": "chat",
+      "symptom": "Questions about drug interactions",
+      "status": "new",
+      "createdAt": "2026-06-30T07:50:00.000Z"
+    },
+    {
+      "id": "6",
+      "customerName": "Kanya Boonmee",
+      "serviceType": "phone_call",
+      "symptom": "Mild fever and sore throat",
+      "status": "in_progress",
+      "createdAt": "2026-06-30T09:30:00.000Z"
+    },
+    {
+      "id": "7",
+      "customerName": "David Wilson",
+      "serviceType": "chat",
+      "symptom": "Dosage clarification for antibiotics",
+      "status": "completed",
+      "createdAt": "2026-06-28T11:15:00.000Z"
+    },
+    {
+      "id": "8",
+      "customerName": "Nattaya Chai",
+      "serviceType": "video_call",
+      "symptom": "Dizziness and nausea after taking new pills",
+      "status": "pending",
+      "createdAt": "2026-06-30T10:02:00.000Z"
+    },
+    {
+      "id": "9",
+      "customerName": "Robert Taylor",
+      "serviceType": "voice_call",
+      "symptom": "Requesting vaccination advice before travel",
+      "status": "new",
+      "createdAt": "2026-06-30T06:40:00.000Z"
+    },
+    {
+      "id": "10",
+      "customerName": "Suda Meesap",
+      "serviceType": "video_call",
+      "symptom": "Chronic migraine, needs medication review",
+      "status": "in_progress",
+      "createdAt": "2026-06-31T25:61:00.000Z"
+    },
+    {
+      "id": "11",
+      "customerName": "Emily Nguyen",
+      "serviceType": "chat",
+      "symptom": "Side effects from cholesterol medication",
+      "status": "new",
+      "createdAt": "2026-06-30T08:22:00.000Z"
+    },
+    {
+      "id": "12",
+      "customerName": "Thanet Kittisak",
+      "serviceType": "video_call",
+      "symptom": "High blood sugar readings this week",
+      "status": "in_progress",
+      "createdAt": "2026-06-30T09:48:00.000Z"
+    },
+    {
+      "id": "13",
+      "customerName": "Laura Martinez",
+      "serviceType": "voice_call",
+      "symptom": null,
+      "status": "new",
+      "createdAt": "2026-06-30T07:10:00.000Z"
+    },
+    {
+      "id": "14",
+      "customerName": "Wichai Sombat",
+      "serviceType": "chat",
+      "symptom": "Follow-up on asthma inhaler technique",
+      "status": "completed",
+      "createdAt": "2026-06-28T13:30:00.000Z"
+    },
+    {
+      "id": "15",
+      "customerName": "",
+      "serviceType": "chat",
+      "symptom": "Insomnia, asking about sleep aids",
+      "status": "new",
+      "createdAt": "2026-06-30T05:58:00.000Z"
+    },
+    {
+      "id": "16",
+      "customerName": "Prasit Jaidee",
+      "serviceType": "video_call",
+      "symptom": "Stomach ulcer pain returning",
+      "status": "new",
+      "createdAt": "2026-06-30T10:20:00.000Z"
+    },
+    {
+      "id": "3",
+      "customerName": "Sophie Brown",
+      "serviceType": "chat",
+      "symptom": "Eye drop recommendation for dryness",
+      "status": "completed",
+      "createdAt": "2026-06-27T10:05:00.000Z"
+    },
+    {
+      "id": "18",
+      "customerName": "Manop Rakdee",
+      "serviceType": "voice_call",
+      "symptom": "Swollen ankle, unsure if infection",
+      "status": "in_progress",
+      "createdAt": "2026-06-30T09:12:00.000Z"
+    },
+    {
+      "id": "19",
+      "customerName": "Olivia Davis",
+      "serviceType": "chat",
+      "symptom": "Antidepressant refill and check-in",
+      "status": "new",
+      "createdAt": "2026-06-30T08:38:00.000Z"
+    },
+    {
+      "id": "20",
+      "customerName": "Chai Pinit",
+      "serviceType": "video_call",
+      "symptom": "Severe allergic reaction, face swelling",
+      "status": "new",
+      "createdAt": "2026-06-30T10:35:00.000Z"
+    }
+  ]
+}
