@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/joho/godotenv"
 )
@@ -39,6 +40,15 @@ func main() {
 
 	handler := NewTaskHandler(NewTaskRepository(pool), os.Getenv("SEED_FILE_PATH"))
 	app := fiber.New(fiber.Config{ErrorHandler: ErrorHandler})
+	corsOrigins := os.Getenv("CORS_ORIGINS")
+	if corsOrigins == "" {
+		corsOrigins = "*"
+	}
+	app.Use(cors.New(cors.Config{
+		AllowOrigins: corsOrigins,
+		AllowMethods: "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+		AllowHeaders: "Origin, Content-Type, Accept, Authorization",
+	}))
 	app.Get("/health", func(c *fiber.Ctx) error { return c.JSON(fiber.Map{"status": "ok"}) })
 
 	api := app.Group("/api/v1/tasks")

@@ -7,7 +7,8 @@ Go Fiber CRUD API backed by Supabase PostgreSQL. The API never modifies the seed
 1. Create `.env` from `.env.example`.
 2. Set `DATABASE_URL` to the Supabase PostgreSQL connection string. The project host is already configured in `.env`; replace `REPLACE_WITH_DATABASE_PASSWORD` with the database password from Supabase Dashboard > Connect. For a long-running backend, use the direct connection or session pooler and keep `sslmode=require`.
 3. Set `SEED_FILE_PATH=/Users/thawatchai/Downloads/db.json`.
-4. Ensure the Supabase table exists:
+4. Set `CORS_ORIGINS` to the Frontend origin, for example `https://frontend.example.com`. Multiple origins can be comma-separated.
+5. Ensure the Supabase table exists:
 
 ```sql
 create table if not exists public.tasks (
@@ -22,7 +23,7 @@ create table if not exists public.tasks (
 
 If the table already exists with `created_at timestamptz`, run the SQL migration in `supabase/migrations/20260714000000_align_tasks_seed_schema.sql` first. It also adds `pending` to the allowed statuses.
 
-5. Install dependencies and run:
+6. Install dependencies and run:
 
 ```bash
 go mod tidy
